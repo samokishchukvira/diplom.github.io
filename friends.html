@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/friends.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo-dim-sirka.ico" type="image/x-icon">
+    <title>Пухнастики</title>
+
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="header__logo">Дім Сірка</a>
+
+        <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+        <nav class="nav" id="nav-menu">
+            <div class="nav__content bd-grid">
+
+                <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+
+                <div class="nav__perfil">
+                    <div class="nav__img">
+                        <img src="images/logo.jpg" alt="shelter logo">
+                    </div>
+                    
+                    <div class="nav-information">
+                        <a href="index.html" class="nav__name">Дім Сірка</a>
+                        <span class="nav__profesion">Благодійна організація</span>
+                    </div>
+                </div>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="about.html" class="nav__link">Про нас</a></li>
+                        <li class="nav__item"><a href="news.html" class="nav__link">Новини</a></li>
+                        <li class="nav__item"><a href="friends.html" class="nav__link">Друг</a></li>
+                        <li class="nav__item"><a href="report.html" class="nav__link">Звіти</a></li>
+                    </ul>
+                </div>
+
+                <div class="lang-toggle">
+                    <button id="lang-toggle-btn" class="lang-btn">
+                      <span class="lang-text">EN</span>
+                    </button>
+                    <button class="favourite-button">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="header-friends">
+            <div class="title">Друг</div>
+        
+            <div class="bubble-one">
+                Добрі вчинки не мають кордонів. Твоя допомога – їхній шанс на щасливе життя!
+            </div>
+            <div class="cat"><img src="images/icon-cat.png" alt=""></div>
+            <div class="bubble-two">
+                Стань підтримкою для безпритульних тварин
+            </div>
+        
+            <div class="bubble-three">
+                Світ стає кращим, коли ми творимо добро. Подаруй тваринам турботу і любов!
+            </div>
+        </div>
+        </section>
+
+        <section class="donation-section">
+            <div class="question-tag"><span class="text-tag">Дай лапу допомоги!</span></div>
+            <div class="donation-content">
+              <form id="donation-form" method="POST" action="pay.php">
+                <div class="form-box">
+                  <div class="tabs">
+                    <span class="tab active-two" data-type="one-time">Разова допомога</span>
+                    <span class="tab" data-type="monthly">Щомісячна допомога</span>
+                  </div>
+    
+                  <input type="hidden" name="type" value="one-time" id="type">
+                  <div class="amount-input-wrapper">
+                    <input type="number" name="amount" class="amount-input" placeholder="0" min="1" required>
+                    <span class="currency">грн</span>
+                  </div>
+    
+                  <div class="amount-buttons">
+                    <button type="button" data-amount="200">+200</button>
+                    <button type="button" data-amount="500">+500</button>
+                    <button type="button" data-amount="1000">+1000</button>
+                  </div>
+    
+                  <button class="submit-btn" type="submit">Рятую хвостики</button>
+                  <p class="hint-text">Твоя допомога – їхній шанс на щасливе життя!</p>
+                </div>
+              </form>
+              <div class="text-box">
+                <h2>Разом ми можемо більше!</h2>
+                <p>Кожна гривня – це шанс на новий дім, лікування та тепло для хвостатих друзів.</p>
+              </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="support-section">
+            <h2 class="support-title">Фінансові внески – це основа стабільної роботи притулку</h2>
+          
+            <div class="support-wrapper">
+              <div class="support-image-box">
+                <img src="images/donation.jpg" alt="Cat and Dog" />
+                <div class="support-label">На що йдуть кошти?</div>
+              </div>
+          
+              <div class="support-details">
+                <ul class="support-list">
+                  <li>🍽️ <strong>Харчування</strong> – забезпечення якісним кормом, молочними сумішами для щенят і кошенят.</li>
+                  <li>💊 <strong>Лікування</strong> – ветеринарні послуги, ліки, стерилізація, вакцинація.</li>
+                  <li>💡 <strong>Комунальні витрати</strong> – оплата електрики, води, опалення для приміщень із тваринами.</li>
+                  <li>🏠 <strong>Облаштування притулку</strong> – будівництво нових вольєрів, утеплення, ремонт.</li>
+                </ul>
+              </div>
+            </div>
+          
+            <div class="support-actions">
+              <p class="support-note">Також можна зробити швидкий донат через 👇</p>
+              <div class="support-buttons">
+                <a href="https://send.monobank.ua/jar/9UHRxKUSU8?fbclid=PAZXh0bgNhZW0CMTEAAafeJyAfz6buUkATIwb81hE845kb0wZ_CzRqeKQACytAdt8c1Rcl_u6ol-zv4A_aem_q-Hy2_1xYDroulH5tjst6Q" class="support-link" target="_blank">На лікування</a>
+                <a href="https://send.monobank.ua/jar/8yJTbTC2d4?fbclid=PAZXh0bgNhZW0CMTEAAadS09dwUxKF9Hm5IeBKyChJgUHosEsQ_n0LToAiniHlxYIKTIAjkrJ1oiD0QQ_aem_xXN4YQC_2jArM3Ds1ah-NA" class="support-link" target="_blank">На притулок</a>
+                <a href="https://truth-kilometer-ae6.notion.site/fc17d7471b7c464e9cbb008d100c8c2c" class="support-link" target="_blank">Реквізити</a>
+              </div>
+            </div>
+          </section>
+          
+          
+    </main>
+    <footer class="charity-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.jpg" alt="logo">
+            </div>
+            <div class="footer-text">
+                <h2>Разом ми можемо врятувати більше хвостиків!</h2>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="news.html">Новини</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                    <li><a href="friends.html">Як допомогти</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <p>Контакти та підтримка</p>
+                <p>м. Івано-Франківськ</p>
+                <a href="tel:+380680476416">+380 (68) 047 64 16</a>
+                <p><a href="mailto:kogutsirko@gmail.com">kogutsirko@gmail.com</a></p>
+            </div>
+            <div class="footer-donate">
+                <a href="https://truth-kilometer-ae6.notion.site/fc17d7471b7c464e9cbb008d100c8c2c" class="button" target="_blank">
+                    Реквізити БФ “БО Дім Сірко”
+                </a>
+                <div class="footer-socials">
+                    <p>Слідкуйте за хвостиками</p>
+                      <div class="social-icons-container"> 
+                        <div class="social-icons">
+                            <img src="images/facebook.png" alt="facebook">
+                            </div>
+                            <div class="social-icons">
+                            <img src="images/instagram.png" alt="instagram">
+                        </div>
+                            <div class="social-icons">
+                            <img src="images/telegram.png" alt="telegram">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Кожен ваш внесок – це врятоване життя. Дякуємо за вашу доброту та небайдужість!</p>
+            <hr>
+            <p class="cookie">Дім Сірка | 2025 | <a href="cookie_policy.html" class="cookie-policy-text">Cookie policy</a></p>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

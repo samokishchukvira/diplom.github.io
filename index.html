@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo-dim-sirka.ico" type="image/x-icon">
+    <title>Наш дім</title>
+
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="header__logo">Дім Сірка</a>
+
+        <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+        <nav class="nav" id="nav-menu">
+            <div class="nav__content bd-grid">
+
+                <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+
+                <div class="nav__perfil">
+                    <div class="nav__img">
+                        <img src="images/logo.jpg" alt="shelter logo">
+                    </div>
+                    
+                    <div class="nav-information">
+                        <a href="index.html" class="nav__name">Дім Сірка</a>
+                        <span class="nav__profesion">Благодійна організація</span>
+                    </div>
+                </div>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="about.html" class="nav__link">Про нас</a></li>
+                        <li class="nav__item"><a href="news.html" class="nav__link">Новини</a></li>
+                        <li class="nav__item"><a href="friends.html" class="nav__link">Друг</a></li>
+                        <li class="nav__item"><a href="report.html" class="nav__link">Звіти</a></li>
+                    </ul>
+                </div>
+
+                <div class="lang-toggle">
+                    <button id="lang-toggle-btn" class="lang-btn">
+                      <span class="lang-text">EN</span>
+                    </button>
+                    <button class="favourite-button">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+            </div>
+        </nav>
+    </header>
+<main>
+    <section class="message">
+        <div class="falling-image"></div> 
+        <div class="message-image">
+            <img src="images/dog.png" alt="dog">
+        </div>
+        <div class="bubble">
+            Гав! Вітаю у нашій хвостатій сім'ї!
+        </div>
+        <div class="title_one">
+            <h1>Дім Сірка</h1>
+            <p>Благодійна організація</p>
+        </div>
+        <div class="dropdown-container">
+            <div class="dropdown-list">Дізнайся, який ти сьогодні</div>
+          </div>
+    </section>
+
+    <section class="charity-message">
+        <div class="charity-header">
+            <p>Квіти зів’януть, солодощі з’їдять, а добра справа запам’ятається назавжди!</p>
+            <span class="icon-paw"><img src="images/paw.png" alt="dog's_paw"></span>
+        </div>
+        <div class="charity-content">
+            <div class="charity-text">
+                <h2>Ми – благодійна організація,</h2>
+                <p>яка допомагає безпритульним тваринам знайти люблячий дім. Наша місія – рятувати, лікувати та прилаштовувати собак і котів, які потребують турботи та любові.</p>
+            </div>
+            <div class="charity-image">
+                <img src="images/human_and_dog.png" alt="human_and_dog">
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section block-orange">
+        <div class="info-boxes">
+            <div class="info-box">
+                <p>понад</p>
+                <h2>400</h2>
+                <p>врятованих тварин</p>
+            </div>
+            <div class="info-box">
+                <p>понад</p>
+                <h2>6300</h2>
+                <p>знайшли своїх домівок</p>
+            </div>
+            <div class="info-box">
+                <p>понад</p>
+                <h2>270</h2>
+                <p>шукають свої домівки</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="animal-section block-orange">
+        <a href="dog.html" class="animal-card">
+          <div class="container-block">
+            <div class="animal-image dog"></div>
+          </div>
+          <p>Песики</p>
+        </a>
+      
+        <a href="cat.html" class="animal-card">
+          <div class="animal-image cat"></div>
+          <p>Котики</p>
+        </a>
+      </section>
+      
+
+    <section class="rescue-section">
+        <div class="moving-text">
+          <p>Історія порятунку тварин Історія порятунку тварин Історія порятунку тварин</p>
+        </div>
+      
+        <div class="rescue-cards">
+          <div class="card mandarynka">
+            <p class="description">Мандаринка потрапила до притулку після важкого наїзду автомобілем. Вона пережила кілька складних операцій і тривалий період реабілітації. На жаль, навіть через рік після одужання вона все ще чекає на свого господаря. Її історія є нагадуванням про те, як важливо давати шанс тваринам, які пережили травми.​</p>
+          </div>
+          <div class="card bublyk">
+            <p class="description">Бублик потрапив до нашого притулку після того, як його знайшли на вулиці в жахливому стані. Він був виснажений і наляканий, ймовірно, хтось залишив його без нагляду. Спочатку він був дуже обережний, не довіряв людям і намагався ховатися. Але з кожним днем він став відкритішим і добрішим.</p>
+          </div>
+          <div class="card lyna">
+            <p class="description">Луна з'явилася в нашому притулку після того, як її знайшли на окраїні міста під час сильної бурі. Вона була вкрай налякана, забруднена і практично не могла ходити. Луна була втраченого погляду, але наші волонтери не залишили її без допомоги. Лікування і реабілітація зайняли кілька місяців, але з часом Луна відновилася, і вона стала найвірнішою та найніжнішою собакою в притулку.</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="donation-section">
+        <div class="question-tag"><span class="text-tag">Дай лапу допомоги!</span></div>
+        <div class="donation-content">
+          <form id="donation-form" method="POST" action="pay.php">
+            <div class="form-box">
+              <div class="tabs">
+                <span class="tab active-two" data-type="one-time">Разова допомога</span>
+                <span class="tab" data-type="monthly">Щомісячна допомога</span>
+              </div>
+
+              <input type="hidden" name="type" value="one-time" id="type">
+              <div class="amount-input-wrapper">
+                <input type="number" name="amount" class="amount-input" placeholder="0" min="1" required>
+                <span class="currency">грн</span>
+              </div>
+
+              <div class="amount-buttons">
+                <button type="button" data-amount="200">+200</button>
+                <button type="button" data-amount="500">+500</button>
+                <button type="button" data-amount="1000">+1000</button>
+              </div>
+
+              <button class="submit-btn" type="submit">Рятую хвостики</button>
+              <p class="hint-text">Твоя допомога – їхній шанс на щасливе життя!</p>
+            </div>
+          </form>
+          <div class="text-box">
+            <h2>Разом ми можемо більше!</h2>
+            <p>Кожна гривня – це шанс на новий дім, лікування та тепло для хвостатих друзів.</p>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="help-section">
+        <h2 class="help-title">Допомагай так, як можеш!</h2>
+        <div class="help-cards">
+          <div class="help-card">
+            <img src="images/coffee.png" alt="Хвостата крамничка">
+            <a href="shop.html" class="help-btn">Хвостата крамничка</a>
+          </div>
+          <div class="help-card">
+            <img src="images/cute-animals.png" alt="Підтримай лапки">
+            <a href="https://truth-kilometer-ae6.notion.site/fc17d7471b7c464e9cbb008d100c8c2c" class="help-btn" target="_blank">Підтримай лапки</a>
+          </div>
+          <div class="help-card">
+            <img src="images/love.png" alt="Стань опорою">
+            <a href="friends.html" class="help-btn">Стань опорою</a>
+          </div>
+        </div>
+      </section>
+      
+      <div class="last-news">
+        <h2>Останні новини</h2></div>
+      <section class="news-section">
+        <div class="question-tag-more"><p class="text-tag-more"><a href="news.html" class="more-news">Більше новин...</a></p></div>
+        <div class="news-container">
+          <div class="news-text">
+            <blockquote>
+              <p>
+                Два тижні її життя в пусту... <br>
+                Приїхали люди, обрали її, забронювали, а потім... відмовилися.
+                А вона чекала. Чекала у тісній кліточці, бо місць у притулку бракує...<br>
+                Але гордо залишалася "заброньованою", мріючи, що її заберуть додому.
+                Серце розривається. <br>
+                Для нас два тижні — ніщо. А для неї — це вічність.
+                <br>Кожен її день минає в очікуванні...
+                Але не так має проходити цуценятство, правда?
+                Ви знаєте, як швидко ростуть цуценята, і з кожним днем її шанси знайти родину зменшуються...
+              </p>
+            </blockquote>
+            <a href="" class="news-button">Давай знайомитися!</a>
+          </div>
+          <div class="news-image">
+            <img src="images/news1.png" alt="Собака на руках">
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="map">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.107086177119!2d24.7648442!3d48.8942963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c391910041fd%3A0x6a789a2223e12e2d!2sBo%20Dim%20Sirka%20.%20Prytulok!5e0!3m2!1sen!2sua!4v1737060200699!5m2!1sen!2sua" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section> 
+</main>
+    <footer class="charity-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.jpg" alt="logo">
+            </div>
+            <div class="footer-text">
+                <h2>Разом ми можемо врятувати більше хвостиків!</h2>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="news.html">Новини</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                    <li><a href="friends.html">Як допомогти</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <p>Контакти та підтримка</p>
+                <p>м. Івано-Франківськ</p>
+                <a href="tel:+380680476416">+380 (68) 047 64 16</a>
+                <p><a href="mailto:kogutsirko@gmail.com">kogutsirko@gmail.com</a></p>
+            </div>
+            <div class="footer-donate">
+                <a href="https://truth-kilometer-ae6.notion.site/fc17d7471b7c464e9cbb008d100c8c2c" class="button" target="_blank">
+                    Реквізити БФ “БО Дім Сірко”
+                </a>
+                <div class="footer-socials">
+                    <p>Слідкуйте за хвостиками</p>
+                      <div class="social-icons-container"> 
+                        <div class="social-icons">
+                            <img src="images/facebook.png" alt="facebook">
+                            </div>
+                            <div class="social-icons">
+                            <img src="images/instagram.png" alt="instagram">
+                        </div>
+                            <div class="social-icons">
+                            <img src="images/telegram.png" alt="telegram">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Кожен ваш внесок – це врятоване життя. Дякуємо за вашу доброту та небайдужість!</p>
+            <hr>
+            <p class="cookie">Дім Сірка | 2025 | <a href="cookie_policy.html" class="cookie-policy-text">Cookie policy</a></p>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
