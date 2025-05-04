@@ -1,98 +1,3 @@
-
-.question-tag-more  {
-  position: relative;
-  top: 0;
-  right:0;
-  background: #837ef2;
-  padding: 20px 10px;
-  border-radius: 60px 60px 0 0;
-  font-weight: bold;
-  font-size: 15px;
-  height: 70px;
-  max-width: 300px;
-}
-.text-tag-more {
-  padding: 10px 40px;
-  font-size: 25px;
-}
-.last-news{
-  text-align: right;
-  margin-bottom: -80px;
-  font-size: 35px;
-  padding: 0 40px;
-}
-.news-section {
-  border-radius: 40px 40px 0 0;
-  color: #1e1e1e;
-  position: relative;
-}
-.news-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: #837ef2;
-  border-radius: 50px;
-  border-top-left-radius: 0;
-  padding: 4rem 8rem;
-  gap: 2rem;
-}
-.news-text {
-  flex: 1 1 300px;
-  max-width: 600px;
-}
-.news-text h2 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-}
-.news-text blockquote {
-  font-size: 1rem;
-  background: #837ef2;
-  padding: 0;
-  margin: 0;
-}
-.news-text blockquote::before {
-  content: "“ Вона чекала… і продовжує чекати";
-  font-size: 1.8rem;
-  color: #000;
-  display: inline-block;
-  vertical-align: top;
-  font-weight: 800;
-  line-height: 1;
-  margin-bottom: 35px;
-}
-.news-button {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.8rem 1.5rem;
-  background-color: transparent;
-  border: 2px solid #100260;
-  color: #100260;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-.news-button:hover {
-  background-color: #a8abf2;
-}
-.news-image {
-  flex: 1 1 250px;
-  max-width: 400px;
-  align-self: center;
-}
-.news-image img {
-  max-width: 100%;
-  object-fit: cover;
-}
-.more-news {
-  position: absolute;
-  top: 1.5rem;
-  right: 2rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #1e1e1e;
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 :root {
   --header-height: 3rem;
@@ -820,7 +725,7 @@ a {
 }
 .help-card {
   background-color: #fc5c2b;
-  border: 2px solid #fff;
+  border: 3px solid #FFA07A;
   border-radius: 50px 0;
   padding-bottom: 10px;
   max-width: 400px;
@@ -837,17 +742,152 @@ a {
   display: inline-block;
   margin-top: auto;
   padding: 10px 20px;
-  border: 2px solid white;
+  border: 3px solid #FFA07A;
   border-radius: 30px;
   background: none;
-  color: #fff;
+  color: #FFA07A;
   font-weight: bold;
   text-decoration: none;
   transition: background 0.3s, color 0.3s;
 }
 .help-btn:hover {
-  background-color: white;
+  background-color: #FFA07A;
   color: #fc5c2b;
+}
+.question-tag-more  {
+  position: relative;
+  top: 0;
+  right:0;
+  background: #837ef2;
+  padding: 20px 10px;
+  border-radius: 60px 60px 0 0;
+  font-weight: bold;
+  font-size: 15px;
+  height: 50px;
+  max-width: 150px;
+}
+.text-tag-more {
+  padding: 10px 40px;
+  font-size: 15px;
+}
+.last-news{
+  text-align: right;
+  padding: 0 40px;
+  margin-bottom: -50px;
+  font-size: 15px;
+}
+.news-section {
+  border-radius: 40px 40px 0 0;
+  color: #1e1e1e;
+  position: relative;
+}
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #837ef2;
+  border-radius: 50px;
+  border-top-left-radius: 0;
+  padding: 4rem 3rem;
+  gap: 2rem;
+}
+.news-text {
+  flex: 1 1 300px;
+  max-width: 600px;
+}
+.news-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.news-text blockquote {
+  font-size: 1rem;
+  background: #837ef2;
+  padding: 0;
+  margin: 0;
+}
+.news-text blockquote::before {
+  content: "“ Вона чекала… і продовжує чекати";
+  font-size: 20px;
+  color: #000;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 35px;
+}
+.news-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  border: 2px solid #100260;
+  color: #100260;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.news-button:hover {
+  background-color: #a8abf2;
+}
+.news-image {
+  flex: 1 1 250px;
+  max-width: 400px;
+  align-self: center;
+}
+.news-image img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.more-news {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #1e1e1e;
+}
+.dual-swipers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 300px;
+  margin: 40px auto;
+  gap: 40px;
+  padding: 0 10px;
+}
+.swiper {
+  width: calc(50% - 40px);
+  height: 200px;
+  margin: 0 20px; 
+}
+.swiper-slide {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #333;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.text-block{
+  max-width: 1300px;
+  text-align: center;
+  margin: 0 auto;
+}
+.text-block h2{
+  font-size: 25px;
+}
+.text-block p{
+  font-size: 15px;
+  color: #9C2E10;
 }
 .charity-footer {
   background-color: #1E1E1E;
@@ -1201,6 +1241,13 @@ main.cookie-policy {
   .help-title {
     font-size: 25px;
   }
+  .dual-swipers {
+    max-width: 450px;
+    gap: 40px;
+  }
+  .swiper {
+    height: 300px;
+  }
 }
 @media screen and (min-width: 620px) {
   .animal-section {
@@ -1219,6 +1266,13 @@ main.cookie-policy {
   }
   .help-title {
     font-size: 28px;
+  }
+  .dual-swipers {
+    max-width: 550px;
+    gap: 80px;
+  }
+  .swiper {
+    height: 350px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1464,6 +1518,13 @@ main.cookie-policy {
   .help-title {
     font-size: 36px;
   }
+  .dual-swipers {
+    max-width: 800px;
+    gap: 80px;
+  }
+  .swiper {
+    height: 500px;
+  }
   .charity-text h2 {
     font-size: 55px;
     font-weight: bold;
@@ -1491,6 +1552,26 @@ main.cookie-policy {
   }
 }
 @media screen and (min-width: 1024px) {
+  .news-text blockquote::before {
+    font-size: 30px;
+  } 
+  .question-tag-more  {
+    height: 70px;
+    max-width: 300px;
+  }
+  .text-tag-more {
+    font-size: 30px;
+  }
+  .more-news {
+    right: 2rem;
+  }
+  .last-news{
+    margin-bottom: -80px;
+    font-size: 35px;
+  }
+  .news-container {
+    padding: 4rem 8rem;
+  }  
   .animal-section {
     margin-top: -20px;
   }
@@ -1547,6 +1628,12 @@ main.cookie-policy {
   .card {
     width: 400px;
     height: 535px;
+  }
+  .text-block h2{
+    font-size: 40px;
+  }
+  .text-block p{
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 1440px) {
