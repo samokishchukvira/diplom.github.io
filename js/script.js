@@ -54,4 +54,12 @@ buttons.forEach(button => {
     let current = parseInt(amountInput.value) || 0;
     amountInput.value = current + value;
   });
+
+  const swiper = new Swiper(".mySwiper", {
+    effect: "cards",
+    grabCursor: true,
+    autoplay: {
+      delay: 3000, 
+    },
+  });
 });
