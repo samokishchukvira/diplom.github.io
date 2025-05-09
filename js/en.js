@@ -23,17 +23,25 @@ function updateContent(lang) {
     return;
   }
 
+  // Оновлення тексту на кнопці
+  const langBtn = document.getElementById('lang-toggle-btn');
+  const langText = langBtn.querySelector('.lang-text');
+  langText.textContent = lang === 'ua' ? 'EN' : 'UA';
+
+  // Оновлення логотипу і підзаголовку в header
   const headerLogo = document.querySelector('.header__logo');
   const headerSubtitle = document.querySelector('.header__toggle + .nav__content .nav__profesion');
   if (headerLogo) headerLogo.textContent = t.headerLogo;
   if (headerSubtitle) headerSubtitle.textContent = t.headerSubtitle;
 
+  // Оновлення пунктів меню
   const navLinks = document.querySelectorAll('.nav__link');
   const navTexts = [t.aboutUs, t.news, t.friends, t.reports];
   navLinks.forEach((link, index) => {
     link.textContent = navTexts[index];
   });
 
+  // Оновлення тексту в footer
   const footerText = document.querySelector('.footer-text h2');
   const footerLinks = document.querySelectorAll('.footer-links a');
   const footerContacts = document.querySelectorAll('.footer-contacts p');
@@ -54,9 +62,3 @@ function updateContent(lang) {
   footerContacts[1].textContent = t.footerContacts.phone;
   footerContacts[2].textContent = t.footerContacts.email;
 }
-
-document.getElementById('lang-toggle-btn').addEventListener('click', () => {
-  console.log("Button clicked!");
-  currentLang = currentLang === 'ua' ? 'en' : 'ua';
-  updateContent(currentLang);
-});
