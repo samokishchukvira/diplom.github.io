@@ -1,0 +1,48 @@
+{
+  "ua": {
+    "headerLogo": "Дім Сірка",
+    "headerSubtitle": "Благодійна організація",
+    "aboutUs": "Про нас",
+    "news": "Новини",
+    "friends": "Друг",
+    "reports": "Звіти",
+    "footerText": "Разом ми можемо врятувати більше хвостиків!",
+    "footerLinks": {
+      "home": "Головна",
+      "about": "Про нас",
+      "news": "Новини",
+      "contacts": "Контакти",
+      "help": "Як допомогти"
+    },
+    "footerContacts": {
+      "location": "м. Івано-Франківськ",
+      "phone": "+380 (68) 047 64 16",
+      "email": "kogutsirko@gmail.com"
+    },
+    "footerDonate": "Реквізити БФ “БО Дім Сірко”",
+    "footerBottom": "Кожен ваш внесок – це врятоване життя. Дякуємо за вашу доброту та небайдужість!"
+  },
+  "en": {
+    "headerLogo": "Dim Sirka",
+    "headerSubtitle": "Charitable Organization",
+    "aboutUs": "About Us",
+    "news": "News",
+    "friends": "Friend",
+    "reports": "Reports",
+    "footerText": "Together we can save more tails!",
+    "footerLinks": {
+      "home": "Home",
+      "about": "About Us",
+      "news": "News",
+      "contacts": "Contacts",
+      "help": "How to Help"
+    },
+    "footerContacts": {
+      "location": "Ivano-Frankivsk",
+      "phone": "+380 (68) 047 64 16",
+      "email": "kogutsirko@gmail.com"
+    },
+    "footerDonate": "Details of the Dim Sirko Charity Fund",
+    "footerBottom": "Every contribution you make is a saved life. Thank you for your kindness and compassion!"
+  }
+}
