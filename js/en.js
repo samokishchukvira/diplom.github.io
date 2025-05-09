@@ -1,56 +1,62 @@
+let currentLang = 'ua';
+let translations = {};
 
-  const translations = {
-    ua: {
-      opennessTitle: "Відкритість та довіра",
-      opennessText: "Ми цінуємо вашу підтримку та хочемо, щоб кожен знав, як використовуються пожертвування. У звітах ви знайдете інформацію про надходження та витрати. Разом ми змінюємо життя тварин!",
-      reportMonths: [
-        "Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень",
-        "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"
-      ],
-      contactLine: "Якщо вам потрібні детальніші звіти або інформація за попередні роки – зв’яжіться з нами.",
-      phoneText: "+380 (68) 047 64 16"
-    },
-    en: {
-      opennessTitle: "Transparency and Trust",
-      opennessText: "We value your support and want everyone to know how donations are used. In the reports, you will find information about income and expenses. Together we change animals' lives!",
-      reportMonths: [
-        "January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"
-      ],
-      contactLine: "If you need more detailed reports or information for previous years – contact us.",
-      phoneText: "+380 (68) 047 64 16"
-    }
-  };
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('json/lang.json')
+    .then(res => res.json())
+    .then(data => {
+      translations = data;
+      updateContent(currentLang);
+    })
+    .catch(error => console.error("Помилка завантаження JSON: ", error));
 
-  let currentLang = 'ua';
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const langBtn = document.getElementById('lang-toggle-btn');
-    const langText = langBtn.querySelector('.lang-text');
-
-    const opennessTitle = document.querySelector('.openness-section h1');
-    const opennessParagraph = document.querySelector('.openness-section p');
-    const contactInfo = document.querySelector('.information-block .info p');
-    const phoneText = document.querySelector('.information-block .phone');
-    const monthButtons = document.querySelectorAll('.download-btn, .months a');
-
-    langBtn.addEventListener('click', () => {
-      currentLang = currentLang === 'ua' ? 'en' : 'ua';
-      langText.textContent = currentLang === 'ua' ? 'EN' : 'UA';
-
-      const t = translations[currentLang];
-      opennessTitle.textContent = t.opennessTitle;
-      opennessParagraph.textContent = t.opennessText;
-      contactInfo.textContent = t.contactLine;
-      phoneText.textContent = t.phoneText;
-
-      monthButtons.forEach((btn, index) => {
-        const img = btn.querySelector('img');
-        if (img && t.reportMonths[index % t.reportMonths.length]) {
-          btn.innerHTML = '';
-          btn.appendChild(img);
-          btn.append(` ${t.reportMonths[index % t.reportMonths.length]}`);
-        }
-      });
-    });
+  document.getElementById('lang-toggle-btn').addEventListener('click', () => {
+    currentLang = currentLang === 'ua' ? 'en' : 'ua';
+    updateContent(currentLang);
   });
+});
+
+function updateContent(lang) {
+  const t = translations[lang];
+  if (!t) {
+    console.error('Переклади для мови не знайдені.');
+    return;
+  }
+
+  const headerLogo = document.querySelector('.header__logo');
+  const headerSubtitle = document.querySelector('.header__toggle + .nav__content .nav__profesion');
+  if (headerLogo) headerLogo.textContent = t.headerLogo;
+  if (headerSubtitle) headerSubtitle.textContent = t.headerSubtitle;
+
+  const navLinks = document.querySelectorAll('.nav__link');
+  const navTexts = [t.aboutUs, t.news, t.friends, t.reports];
+  navLinks.forEach((link, index) => {
+    link.textContent = navTexts[index];
+  });
+
+  const footerText = document.querySelector('.footer-text h2');
+  const footerLinks = document.querySelectorAll('.footer-links a');
+  const footerContacts = document.querySelectorAll('.footer-contacts p');
+  const footerDonate = document.querySelector('.footer-donate a');
+  const footerBottom = document.querySelector('.footer-bottom p');
+
+  if (footerText) footerText.textContent = t.footerText;
+  if (footerDonate) footerDonate.textContent = t.footerDonate;
+  if (footerBottom) footerBottom.textContent = t.footerBottom;
+
+  footerLinks[0].textContent = t.footerLinks.home;
+  footerLinks[1].textContent = t.footerLinks.about;
+  footerLinks[2].textContent = t.footerLinks.news;
+  footerLinks[3].textContent = t.footerLinks.contacts;
+  footerLinks[4].textContent = t.footerLinks.help;
+
+  footerContacts[0].textContent = t.footerContacts.location;
+  footerContacts[1].textContent = t.footerContacts.phone;
+  footerContacts[2].textContent = t.footerContacts.email;
+}
+
+document.getElementById('lang-toggle-btn').addEventListener('click', () => {
+  console.log("Button clicked!");
+  currentLang = currentLang === 'ua' ? 'en' : 'ua';
+  updateContent(currentLang);
+});
