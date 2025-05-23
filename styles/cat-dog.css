@@ -1,3 +1,29 @@
+.favorite-bg {
+  background-color: #ffeaea;
+  transition: background-color 0.3s ease;
+}
+.favorite-msg {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff4081;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-size: 16px;
+  z-index: 9999;
+  animation: fadeInOut 3s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; top: 10px; }
+  10% { opacity: 1; top: 20px; }
+  90% { opacity: 1; top: 20px; }
+  100% { opacity: 0; top: 0; }
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 :root {
     --header-height: 3rem;
@@ -237,7 +263,16 @@ nav ul {
     justify-content: center;      
     justify-items: center;         
   }
+  .dog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+  .cat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
   .dog-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
@@ -500,6 +535,9 @@ form button:hover {
   .footer-contacts a{
     color: white;
   }
+    .footer-donate {
+   margin-top: 25px;
+ }
   .footer-donate .button {
     background-color: var(--light-blue-color);
     padding: 10px 20px;
@@ -629,6 +667,15 @@ form button:hover {
     text-align: center;
     font-size: 25px;
   } 
+}
+@media screen and (min-width: 480px) {
+  .footer-donate .button {
+    font-size: 18px;
+  }
+  .footer-socials p {
+    margin-top: 60px;
+    font-size: 22px;
+  }
 }
 @media screen and (min-width: 630px) {
   .charity-footer {
@@ -884,7 +931,5 @@ form textarea {
     width: 800px;
     margin-top: -508px; 
     margin-left: 600px;
-  }
-  
-  
+  } 
 }
