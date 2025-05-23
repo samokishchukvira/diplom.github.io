@@ -409,6 +409,9 @@ nav ul {
   .footer-contacts a{
     color: white;
   }
+  .footer-donate {
+   margin-top: 25px;
+ }
   .footer-donate .button {
     background-color: var(--light-blue-color);
     padding: 10px 20px;
@@ -559,6 +562,13 @@ nav ul {
 .description.eight p {
 margin-top: -50px;
 }
+  .footer-donate .button {
+    font-size: 22px;
+  }
+  .footer-socials p {
+    margin-top: 60px;
+    font-size: 22px;
+  }
 }
 @media (min-width: 620px) {
   .dog-photo img {
