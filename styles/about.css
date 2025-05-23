@@ -35,12 +35,6 @@
   max-width: 450px;
 }
 */
-
-
-
-
-
-
 .values-section {
   padding: 100px 20px;
 }
@@ -85,8 +79,6 @@
 .text-block strong {
   font-weight: bold;
 }
-
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 :root {
   --header-height: 3rem;
@@ -394,6 +386,7 @@ nav ul {
     border-radius: 15px;
     object-fit: cover;
   }
+  
   .contact-section {
     padding: 10px 0;
   }
@@ -441,9 +434,6 @@ nav ul {
   .contact-form textarea {
     height: 200px;
   }
-  .contact-form button {
-    display: none; 
-  }
   .contact-info {
     display: flex;
     flex-direction: column;
@@ -463,6 +453,20 @@ nav ul {
     max-width: 450px;
     opacity: 60%;
   }
+  .send-button {
+  background: #ff5a42;
+  color: #F0DC75;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px 50px;
+  border-radius: 5px;
+  text-decoration: none;
+  max-width: 550px;
+  margin-top: 20px; 
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
   .phone-button {
     background: #ff5a42;
     color: #F0DC75;
@@ -618,6 +622,10 @@ nav ul {
   .footer-contacts a{
     color: white;
   }
+  .footer-donate {
+    font-weight: 500;
+   margin-top: 25px;
+ }
   .footer-donate .button {
     background-color: var(--light-blue-color);
     padding: 10px 20px;
@@ -728,6 +736,15 @@ nav ul {
     max-width: 300px;
     top: 60px;
     right: 520px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer-donate .button {
+    font-size: 18px;
+  }
+  .footer-socials p {
+    margin-top: 60px;
+    font-size: 22px;
   }
 }
 @media screen and (min-width: 630px) {
@@ -1030,6 +1047,10 @@ nav ul {
     max-width: 420px;
     height: auto;
     object-fit: cover;
+  }
+   .footer-donate .button {
+    font-size: 25px;
+    width: 420px;
   }
 }
 @media screen and (min-width: 1270px) {
