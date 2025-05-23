@@ -14,105 +14,191 @@
 
 </head>
 <body>
-    <header class="header">
-        <a href="index.html" class="header__logo">Дім Сірка</a>
+<header class="header">
+  <a href="index.html" class="header__logo" id="logo-text">Дім Сірка</a>
 
-        <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+  <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
 
-        <nav class="nav" id="nav-menu">
-            <div class="nav__content bd-grid">
+  <nav class="nav" id="nav-menu">
+    <div class="nav__content bd-grid">
+      <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
 
-                <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
-
-                <div class="nav__perfil">
-                    <div class="nav__img">
-                        <img src="images/logo.jpg" alt="shelter logo">
-                    </div>
-                    
-                    <div class="nav-information">
-                        <a href="index.html" class="nav__name">Дім Сірка</a>
-                        <span class="nav__profesion">Благодійна організація</span>
-                    </div>
-                </div>
-
-                <div class="nav__menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="about.html" class="nav__link">Про нас</a></li>
-                        <li class="nav__item"><a href="news.html" class="nav__link">Новини</a></li>
-                        <li class="nav__item"><a href="friends.html" class="nav__link">Друг</a></li>
-                        <li class="nav__item"><a href="report.html" class="nav__link">Звіти</a></li>
-                    </ul>
-                </div>
-
-                <div class="lang-toggle">
-                    <button id="lang-toggle-btn" class="lang-btn">
-                      <span class="lang-text">EN</span>
-                    </button>
-                    <button class="favourite-button">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section></section>
-    </main>
-    <footer class="charity-footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="images/logo.jpg" alt="logo">
-            </div>
-            <div class="footer-text">
-                <h2>Разом ми можемо врятувати більше хвостиків!</h2>
-            </div>
+      <div class="nav__perfil">
+        <div class="nav__img">
+          <img src="images/logo.jpg" alt="shelter logo">
         </div>
-        <div class="footer-content">
-            <div class="footer-links">
-                <ul>
-                    <li><a href="index.html">Головна</a></li>
-                    <li><a href="about.html">Про нас</a></li>
-                    <li><a href="news.html">Новини</a></li>
-                    <li><a href="contacts.html">Контакти</a></li>
-                    <li><a href="friends.html">Як допомогти</a></li>
-                </ul>
-            </div>
-            <div class="footer-contacts">
-                <p>Контакти та підтримка</p>
-                <p>м. Івано-Франківськ</p>
-                <a href="tel:+380680476416">+380 (68) 047 64 16</a>
-                <p><a href="mailto:kogutsirko@gmail.com">kogutsirko@gmail.com</a></p>
-            </div>
-            <div class="footer-donate">
-                <a href="https://truth-kilometer-ae6.notion.site/fc17d7471b7c464e9cbb008d100c8c2c" class="button" target="_blank">
-                    Реквізити БФ “БО Дім Сірко”
-                </a>
-                <div class="footer-socials">
-                    <p>Слідкуйте за хвостиками</p>
-                      <div class="social-icons-container"> 
-                        <div class="social-icons">
-                            <img src="images/facebook.png" alt="facebook">
-                            </div>
-                            <div class="social-icons">
-                            <img src="images/instagram.png" alt="instagram">
-                        </div>
-                            <div class="social-icons">
-                            <img src="images/telegram.png" alt="telegram">
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <div class="nav-information">
+          <a href="index.html" class="nav__name" id="nav-name">Дім Сірка</a>
+          <span class="nav__profesion" id="nav-profession">Благодійна організація</span>
         </div>
-        <div class="footer-bottom">
-            <p>Кожен ваш внесок – це врятоване життя. Дякуємо за вашу доброту та небайдужість!</p>
-            <hr>
-            <p class="cookie">Дім Сірка | 2025 | <a href="cookie_policy.html" class="cookie-policy-text">Cookie policy</a></p>
+      </div>
+
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="about.html" class="nav__link" id="nav-about">Про нас</a></li>
+          <li class="nav__item"><a href="news.html" class="nav__link" id="nav-news">Новини</a></li>
+          <li class="nav__item"><a href="friends.html" class="nav__link" id="nav-friend">Друг</a></li>
+          <li class="nav__item"><a href="report.html" class="nav__link" id="nav-report">Звіти</a></li>
+        </ul>
+      </div>
+
+      <div class="lang-toggle">
+        <button id="lang-toggle-btn" class="lang-btn">
+          <span class="lang-text">EN</span>
+        </button>
+        <form action="favorites.php" method="POST" style="display:inline;">
+          <button type="submit" class="favourite-button">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <div class="moving-text">
+      <p id="moving-text">Муркотливий зв'язок Муркотливий зв'язок Муркотливий зв'язок Муркотливий зв'язок Муркотливий зв'язок</p>
+    </div>
+  </section>
+
+  <section class="contact-block">
+    <div class="contact-container">
+      <!-- Ліва колонка -->
+      <div class="contact-wrapper">
+        <h2 class="contact-title" id="contact-info-title">
+          <img src="images/location.png" alt="location icon">Контактна інформація:
+        </h2>
+        <ul class="contact-list" id="contact-list">
+          <li id="address">Адреса притулку: м. Івано-Франківськ</li>
+          <li id="phone">Телефон: +380 (68) 047 64 16</li>
+          <li id="email">Email: kogutsirko@gmail.com</li>
+          <li id="working-hours">Години роботи: Пн–Сб з 10:00 до 18:00</li>
+        </ul>
+        <div class="footer-socials">
+          <div class="social-icons-container">
+            <div class="social-icons" id="facebook-icon">
+              <img src="images/facebook.png" alt="facebook">
+            </div>
+            <div class="social-icons" id="instagram-icon">
+              <img src="images/instagram.png" alt="instagram">
+            </div>
+            <div class="social-icons" id="telegram-icon">
+              <img src="images/telegram.png" alt="telegram">
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+
+      <div class="contact-image">
+        <img src="images/heart-paw.png" alt="Heart Image">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-wrap">
+      <div class="cat-message-text">
+        <h2 id="question-title">Маєш запитання? Мур-мяу! Дай знати нам!</h2>
+        <h4 id="welcome-subtitle">Ми раді новим друзям!</h4>
+        <p id="invitation-text">
+          Чи ти хочеш прихистити хвостика? Допомогти лапами (чи гривнями)? А може — просто погавкати про життя? <br>Напиши нам! Ми не кусаємось. Лише відповідаємо з теплом і вдячністю 💛
+        </p>
+      </div>
+
+      <div class="cat-image">
+        <img src="images/contact.png" alt="Кіт у гамаку в окулярах">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-box">
+      <div class="contact-form">
+        <p id="form-instruction">заповнюй форму, і ми зв’яжемося з тобою в найближчий час</p>
+        <form action="send.php" method="POST">
+          <input type="text" name="name" placeholder="Ім’я" id="form-name" required>
+          <input type="email" name="email" placeholder="Email" id="form-email" required>
+          <textarea name="message" placeholder="Повідомлення" rows="4" id="form-message" required></textarea>
+          <button type="submit" class="send-button" id="send-button">Надіслати</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h2 id="call-title"><strong>або телефонуй,</strong></h2>
+        <p id="call-text">ми з радістю допоможемо та відповімо на всі твої запитання</p>
+        <a href="tel:+380680476416" class="phone-button" id="phone-button">+380 (68) 047 64 16</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="charity-footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="images/logo.jpg" alt="logo" />
+    </div>
+    <div class="footer-text">
+      <h2 id="footer-heading">Разом ми можемо врятувати більше хвостиків!</h2>
+    </div>
+  </div>
+
+  <div class="footer-content">
+    <div class="footer-links">
+      <ul>
+        <li><a href="index.html" id="footer-home">Головна</a></li>
+        <li><a href="about.html" id="footer-about">Про нас</a></li>
+        <li><a href="news.html" id="footer-news">Новини</a></li>
+        <li><a href="contacts.html" id="footer-contacts-link">Контакти</a></li>
+        <li><a href="friends.html" id="footer-help">Як допомогти</a></li>
+      </ul>
+    </div>
+    <div class="footer-contacts">
+      <p id="footer-contacts-title">Контакти та підтримка</p>
+      <p id="footer-location">м. Івано-Франківськ</p>
+      <a href="tel:+380680476416">+380 (68) 047 64 16</a>
+      <p><a href="mailto:kogutsirko@gmail.com" id="footer-email">kogutsirko@gmail.com</a></p>
+    </div>
+    <div class="footer-donate">
+      <a
+        href="https://truth-kilometer-ae6.notion.site/fc17d7471b7c464e9cbb008d100c8c2c"
+        class="button"
+        target="_blank"
+        id="footer-donation-link"
+      >
+        Реквізити БФ “БО Дім Сірко”
+      </a>
+      <div class="footer-socials">
+        <p id="footer-follow">Слідкуйте за хвостиками</p>
+        <div class="social-icons-container">
+          <div class="social-icons">
+            <img src="images/facebook.png" alt="facebook" />
+          </div>
+          <div class="social-icons">
+            <img src="images/instagram.png" alt="instagram" />
+          </div>
+          <div class="social-icons">
+            <img src="images/telegram.png" alt="telegram" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p id="footer-bottom-text">
+      Кожен ваш внесок – це врятоване життя. Дякуємо за вашу доброту та небайдужість!
+    </p>
+    <hr />
+    <p class="cookie">
+      Дім Сірка | 2025 | <a href="cookie_policy.html" class="cookie-policy-text" id="footer-cookie">Cookie policy</a>
+    </p>
+  </div>
+</footer> 
 
     <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/contacts_en.js"></script>
 </body>
 </html>
