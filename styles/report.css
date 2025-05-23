@@ -327,7 +327,7 @@ nav ul {
     text-align: center;
     font-weight: 100;
     line-height: 20px;
-    font-size: 14px;
+    font-size: 13px;
   }
   .footer-links li {
     margin: 5px 0;
@@ -341,7 +341,7 @@ nav ul {
     color: #FFA07A;
   }
   .footer-contacts {
-    font-size: 15px;
+    font-size: 13px;
     text-align: center;
     font-weight: 100;
   }
@@ -351,6 +351,10 @@ nav ul {
   .footer-contacts a{
     color: white;
   }
+  .footer-donate {
+  margin-top: 25px;
+  font-weight: 500;
+}
   .footer-donate .button {
     background-color: #F15A29;
     padding: 10px 20px;
@@ -508,6 +512,10 @@ nav ul {
   .paw-image {
     width: 190px;
     height: 190px;
+  }
+   .footer-socials p {
+    margin-top: 60px;
+    font-size: 22px;
   }
 }
 @media screen and (min-width: 630px) {
@@ -694,6 +702,10 @@ nav ul {
   .paw-image {
     width: 450px;
     height: 450px;
+  }
+  .footer-donate .button {
+    font-size: 25px;
+    width: 420px;
   }
 }
 @media screen and (min-width: 1270px) {
