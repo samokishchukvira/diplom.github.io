@@ -14,47 +14,48 @@
 
 </head>
 <body>
-    <header class="header">
-        <a href="index.html" class="header__logo">Дім Сірка</a>
+<header class="header">
+  <a href="index.html" class="header__logo" id="logo-text">Дім Сірка</a>
 
-        <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+  <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
 
-        <nav class="nav" id="nav-menu">
-            <div class="nav__content bd-grid">
+  <nav class="nav" id="nav-menu">
+    <div class="nav__content bd-grid">
+      <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
 
-                <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+      <div class="nav__perfil">
+        <div class="nav__img">
+          <img src="images/logo.jpg" alt="shelter logo">
+        </div>
 
-                <div class="nav__perfil">
-                    <div class="nav__img">
-                        <img src="images/logo.jpg" alt="shelter logo">
-                    </div>
-                    
-                    <div class="nav-information">
-                        <a href="index.html" class="nav__name">Дім Сірка</a>
-                        <span class="nav__profesion">Благодійна організація</span>
-                    </div>
-                </div>
+        <div class="nav-information">
+          <a href="index.html" class="nav__name" id="nav-name">Дім Сірка</a>
+          <span class="nav__profesion" id="nav-profession">Благодійна організація</span>
+        </div>
+      </div>
 
-                <div class="nav__menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="about.html" class="nav__link">Про нас</a></li>
-                        <li class="nav__item"><a href="news.html" class="nav__link">Новини</a></li>
-                        <li class="nav__item"><a href="friends.html" class="nav__link">Друг</a></li>
-                        <li class="nav__item"><a href="report.html" class="nav__link">Звіти</a></li>
-                    </ul>
-                </div>
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="about.html" class="nav__link" id="nav-about">Про нас</a></li>
+          <li class="nav__item"><a href="news.html" class="nav__link" id="nav-news">Новини</a></li>
+          <li class="nav__item"><a href="friends.html" class="nav__link" id="nav-friend">Друг</a></li>
+          <li class="nav__item"><a href="report.html" class="nav__link" id="nav-report">Звіти</a></li>
+        </ul>
+      </div>
 
-                <div class="lang-toggle">
-                    <button id="lang-toggle-btn" class="lang-btn">
-                      <span class="lang-text">EN</span>
-                    </button>
-                    <button class="favourite-button">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-            </div>
-        </nav>
-    </header>
+      <div class="lang-toggle">
+        <button id="lang-toggle-btn" class="lang-btn">
+          <span class="lang-text">EN</span>
+        </button>
+        <form action="favorites.php" method="POST" style="display:inline;">
+          <button type="submit" class="favourite-button">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
     <main>
         
         <section class="news-header">
@@ -70,14 +71,14 @@
           <section class="gallery-section">
               <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="images/news8.PNG" alt="Кішка, яка народила котенят">
+                    <img src="images/news8.png" alt="Кішка, яка народила котенят">
                     <div class="description four">
                       <p>Терміново потрібна перетримка!</p>
                       <button data-modal="modal4">Докладніше</button>
                     </div>
                   </div>
                   <div class="gallery-item">
-                    <img src="images/news7.PNG" alt="Юний собака">
+                    <img src="images/news7.png" alt="Юний собака">
                     <div class="description three">
                       <p>Він ще зовсім юний…</p>
                       <button data-modal="modal3">Докладніше</button>
@@ -281,59 +282,70 @@
               </div>
              </section>    
     </main>
-    <footer class="charity-footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="images/logo.jpg" alt="logo">
-            </div>
-            <div class="footer-text">
-                <h2>Разом ми можемо врятувати більше хвостиків!</h2>
-            </div>
+<footer class="charity-footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="images/logo.jpg" alt="logo" />
+    </div>
+    <div class="footer-text">
+      <h2 id="footer-heading">Разом ми можемо врятувати більше хвостиків!</h2>
+    </div>
+  </div>
+
+  <div class="footer-content">
+    <div class="footer-links">
+      <ul>
+        <li><a href="index.html" id="footer-home">Головна</a></li>
+        <li><a href="about.html" id="footer-about">Про нас</a></li>
+        <li><a href="news.html" id="footer-news">Новини</a></li>
+        <li><a href="contacts.html" id="footer-contacts-link">Контакти</a></li>
+        <li><a href="friends.html" id="footer-help">Як допомогти</a></li>
+      </ul>
+    </div>
+    <div class="footer-contacts">
+      <p id="footer-contacts-title">Контакти та підтримка</p>
+      <p id="footer-location">м. Івано-Франківськ</p>
+      <a href="tel:+380680476416">+380 (68) 047 64 16</a>
+      <p><a href="mailto:kogutsirko@gmail.com" id="footer-email">kogutsirko@gmail.com</a></p>
+    </div>
+    <div class="footer-donate">
+      <a
+        href="https://truth-kilometer-ae6.notion.site/fc17d7471b7c464e9cbb008d100c8c2c"
+        class="button"
+        target="_blank"
+        id="footer-donation-link"
+      >
+        Реквізити БФ “БО Дім Сірко”
+      </a>
+      <div class="footer-socials">
+        <p id="footer-follow">Слідкуйте за хвостиками</p>
+        <div class="social-icons-container">
+          <div class="social-icons">
+            <img src="images/facebook.png" alt="facebook" />
+          </div>
+          <div class="social-icons">
+            <img src="images/instagram.png" alt="instagram" />
+          </div>
+          <div class="social-icons">
+            <img src="images/telegram.png" alt="telegram" />
+          </div>
         </div>
-        <div class="footer-content">
-            <div class="footer-links">
-                <ul>
-                    <li><a href="index.html">Головна</a></li>
-                    <li><a href="about.html">Про нас</a></li>
-                    <li><a href="news.html">Новини</a></li>
-                    <li><a href="contacts.html">Контакти</a></li>
-                    <li><a href="friends.html">Як допомогти</a></li>
-                </ul>
-            </div>
-            <div class="footer-contacts">
-                <p>Контакти та підтримка</p>
-                <p>м. Івано-Франківськ</p>
-                <a href="tel:+380680476416">+380 (68) 047 64 16</a>
-                <p><a href="mailto:kogutsirko@gmail.com">kogutsirko@gmail.com</a></p>
-            </div>
-            <div class="footer-donate">
-                <a href="https://truth-kilometer-ae6.notion.site/fc17d7471b7c464e9cbb008d100c8c2c" class="button" target="_blank">
-                    Реквізити БФ “БО Дім Сірко”
-                </a>
-                <div class="footer-socials">
-                    <p>Слідкуйте за хвостиками</p>
-                      <div class="social-icons-container"> 
-                        <div class="social-icons">
-                            <img src="images/facebook.png" alt="facebook">
-                            </div>
-                            <div class="social-icons">
-                            <img src="images/instagram.png" alt="instagram">
-                        </div>
-                            <div class="social-icons">
-                            <img src="images/telegram.png" alt="telegram">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>Кожен ваш внесок – це врятоване життя. Дякуємо за вашу доброту та небайдужість!</p>
-            <hr>
-            <p class="cookie">Дім Сірка | 2025 | <a href="cookie_policy.html" class="cookie-policy-text">Cookie policy</a></p>
-        </div>
-    </footer>     
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p id="footer-bottom-text">
+      Кожен ваш внесок – це врятоване життя. Дякуємо за вашу доброту та небайдужість!
+    </p>
+    <hr />
+    <p class="cookie">
+      Дім Сірка | 2025 | <a href="cookie_policy.html" class="cookie-policy-text" id="footer-cookie">Cookie policy</a>
+    </p>
+  </div>
+</footer>    
     <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
-    <script src="js/news.js"></script>
+    <script src="js/news_en.js"></script>
 </body>
 </html>
