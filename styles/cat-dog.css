@@ -55,6 +55,32 @@ body {
     margin: 0;
     padding: 0;
 }
+/* анімації */
+
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #1a005e;;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  display: none;
+  z-index: 1000;
+}
+#scrollTopBtn:hover {
+  opacity: 1;
+}
+#scrollTopBtn i {
+  font-style: normal;
+  user-select: none;
+}
 .lang-toggle {
     display: flex;
     align-items: center;
@@ -931,5 +957,7 @@ form textarea {
     width: 800px;
     margin-top: -508px; 
     margin-left: 600px;
-  } 
+  }
+  
+  
 }
